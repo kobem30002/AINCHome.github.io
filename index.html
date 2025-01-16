@@ -1,0 +1,172 @@
+<DOCTYPE html!>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINCL Home</title>
+
+<style>
+    .carousel-inner img {
+        max-height: 250px; /* 원하는 높이로 설정 */
+        object-fit: cover; /* 이미지가 잘리지 않고 적절히 조정되도록 설정 */
+    }
+    <style>
+    .headerImg {
+        height: 500px; /* 이미지 높이 조정 */
+        object-fit: cover; /* 이미지가 컨테이너에 맞게 조정 */
+        border-radius: 8px; /* 모서리 둥글게 (선택 사항) */
+        margin: 0 auto; /* 중앙 정렬 */
+    }
+
+    .carousel-caption {
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .headerImg {
+            height: 300px; /* 작은 화면에서는 높이 축소 */
+        }
+    }
+</style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0d6efd;">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo4.png" alt="로고" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link text-light fw-bold" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light fw-bold" href="#" id="dropdownMenuResearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Members
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuResearch">
+                        <li><a class="dropdown-item" href="members-professor.html">Professor</a></li>
+                        <li><a class="dropdown-item" href="members-students.html">Students</a></li>
+                        <li><a class="dropdown-item" href="members-alumi.html">Alumi</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light fw-bold" href="#" id="dropdownMenuResearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Research
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuResearch">
+                        <li><a class="dropdown-item" href="research-project.html">Project</a></li>
+                        <li><a class="dropdown-item" href="research-journals.html">Journal</a></li>
+                        <li><a class="dropdown-item" href="research-conferences.html">Conference</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-light fw-bold" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link text-light fw-bold" href="seminar.html">Seminar</a></li>             
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="mt-5">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>         
+        </div>
+        <div class="carousel-inner bg-dark bg-opacity-50">
+            <div class="carousel-item active">
+                <img src="images/header1.jpg" class="d-block w-75 headerImg mx-auto" alt="header1">
+                <div class="carousel-caption">
+                    <h2 class="d-none d-md-block fw-bold text-h2-responsive">증강지능 및 인지 연구실</h2>
+                    Augmented Intelligence & Cognition Lab.
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/header4(copy).jpg" class="d-block w-75 headerImg mx-auto" alt="header2">
+                <div class="carousel-caption">
+                    <h2 class="d-none d-md-block fw-bold text-h2-responsive">증강지능 및 인지 연구실</h2>
+                    Augmented Intelligence & Cognition Lab.
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/header3(copy).jpg" class="d-block w-75 headerImg mx-auto" alt="header3"><!-- 돌아가는 이미지-->
+                <div class="carousel-caption">
+                    <h2 class="d-none d-md-block fw-bold text-h2-responsive">증강지능 및 인지 연구실</h2>
+                    Augmented Intelligence & Cognition Lab.
+                </div>
+            </div>        
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</header>
+
+    
+
+
+
+
+    <section>
+<div class="container my-5">
+    <!-- 텍스트와 이미지가 한 줄에 배치될 영역 -->
+    <div class="d-flex align-items-start">
+        <!-- 텍스트 콘텐츠 -->
+        <div class="flex-grow-1 me-4">
+            <h5 class="text-dark fw-bold border-bottom border-2 pb-2 text-h5-responsive">저희 연구실에서는 음성, 음향을 기반으로 사람의 인지 능력을 향상시킬 수 있는 인공지능을 연구하고 있습니다.</h5>
+            <ul>
+                <li><h4>청각 상황인지 (Auditory Situation Awareness)<br></h4></li>
+                <li><h4>자동 음성인식 (Automatic Speech Recognition)<br></h4></li>
+                <li><h4>청력 증강 (Auditory Augmentation)<br></h4></li>
+                <li><h4>음성 합성 및 변환 (Speech Synthesis and Translation)<br></h4></li>
+                <li><h4>음성 향상 및 디노이징 (Speech Enhancement and Denoising)</h4></li>
+            </ul>
+        </div>
+
+        <!-- 이미지 콘텐츠 -->
+        <div>
+            <img src="images/기술들.png" alt="기술 설명 이미지" class="img-fluid shadow rounded" style="max-width: 600px;">
+        </div>
+    </div>
+</div>
+
+        <div class="container border-bottom border-2 border-dark my-5 px-1">
+                    <h5 class="text-dark fw-bold border-bottom border-2 pb-2 text-h5-responsive">Contact Us</h5>
+                    <ul>
+                        <li><p class="text-p-responsive"><지도 교수><br>김선만<br>E-mail: smkim@hs.ac.kr
+                        <br> +82-031-379-0652</p></li>
+                        <li><p class="text-p-responsive"><랩 학생 대표><br>노진산<br>E-mail: rohjinsan02@hs.ac.kr</p></li>
+                        <li>
+                            <h4 class="text-p-responsive"><b>(18101) 경기도 오산시 한신대길 137 (한신대학교) 18503호<br></b></h4>
+                        </li>
+                    </ul>
+      
+        </div>
+
+    </section>
+    <footer class="bg-dark text-white">
+      <div class="container text-center">
+        <p class="py-4 mb-0">Copyright 2024 Designed by <a href="index" class="link-warning text-decoration-none">Augmented Intelligence & Cognition Lab.</a></p>
+      </div>      
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

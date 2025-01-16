@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINCL Homepage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        padding-top: 60px; /* 네비게이션 바 높이를 고려한 패딩 */
+    }
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0d6efd;">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo4.png" alt="로고" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link text-light fw-bold" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light fw-bold" href="#" id="dropdownMenuResearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Members
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuResearch">
+                        <li><a class="dropdown-item" href="members-professor.html">Professor</a></li>
+                        <li><a class="dropdown-item" href="members-students.html">Students</a></li>
+                        <li><a class="dropdown-item" href="members-alumi.html">Alumi</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light fw-bold" href="#" id="dropdownMenuResearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Research
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuResearch">
+                        <li><a class="dropdown-item" href="research-project.html">Project</a></li>
+                        <li><a class="dropdown-item" href="research-journals.html">Journal</a></li>
+                        <li><a class="dropdown-item" href="research-conferences.html">Conference</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-light fw-bold" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link text-light fw-bold" href="seminar.html">Seminar</a></li>             
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<div class="container my-5">
+    <h3 class="mb-4">연구 과제 목록</h3>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th scope="col">과제명</th>
+                <th scope="col">사업명</th>
+                <th scope="col">연구기간</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>종단간 올뉴럴 온디바이스 AI 청각보조 기술에 대한 연구</td>
+                <td>NRF-중견연구사업(1-2)</td>
+                <td>2022.03~2027.02</td>
+            </tr>
+            <tr>
+                <td>AR 기술기반 안운동 이상 검진 의료 기기 개발</td>
+                <td>범부처사업단-전주의료기기연구개발사업</td>
+                <td>2022.04~2023.12</td>
+            </tr>
+            <tr>
+                <td>인공지능을 이용한 음향기반 위급상황 분석 비상벨 관계 시스템 개발</td>
+                <td>IITP-인공지능기업육성사업</td>
+                <td>2020.04~2021.12</td>
+            </tr>
+            <tr>
+                <td>실시간 잡음음성 어음인지도 예측에 따른 심층신경 잡음처리에 기반을 둔 시지향형 보청기 음성향상 시스템 개발</td>
+                <td>NRF-기본연구</td>
+                <td>2019.06~2022.02</td>
+            </tr>
+            <tr>
+                <td>사회 안전망 강화를 위한 대화음성 분석 기반 폭력상황 인지 기술 개발</td>
+                <td>IITP-인공지능산업융합기술개발</td>
+                <td>2020.07~2022.12</td>
+            </tr>
+            <tr>
+                <td>야외 시인성 확보 가능한 AR 디바이스용 영상표시장치 기술 개발</td>
+                <td>IITP-방송통신산업기술개발사업</td>
+                <td>2020.04~2020.12</td>
+            </tr>
+            <tr>
+                <td>공간 음향-정보 방사 디스플레이 개발을 위한 기초 연구</td>
+                <td>KOPTI-미래전략기술 기초연구사업</td>
+                <td>2019.03~2019.10</td>
+            </tr>
+            <tr>
+                <td>스마트폰/TV 음향 디스플레이 기술 개발</td>
+                <td>LGD CTO융합담당 연구사업</td>
+                <td>2017.06~2018.12</td>
+            </tr>
+            <tr>
+                <td>잡음 환경에서의 보청기 만족도 향상을 위한 보청기 착용 누설 잡음 처리 알고리즘 연구</td>
+                <td>NTF-신진연구</td>
+                <td>2017.03~2017.05</td>
+            </tr>
+            <tr>
+                <td>심층 기계학습 기반 보청기 기술 개발 기획 연구</td>
+                <td>GIST-미래신산업창출 기획</td>
+                <td>2016.08~2016.12</td>
+            </tr>
+            <tr>
+                <td>Improved Communication Through Applied Hearing Research</td>
+                <td>[Marie Curie Foundation] 유럽연합공동연구사업</td>
+                <td>2014.08~2015.10</td>
+            </tr>
+            <tr>
+                <td>이중 채널 비음수행렬 인수분해(NMF) 기법을 이용한 보청기에서의 잡음 감 방법 연구</td>
+                <td>NRF-학문후속세대양성지원사업</td>
+                <td>2013.08~2014.07</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+    <footer class="bg-dark text-white">
+      <div class="container text-center">
+        <p class="py-4 mb-0">Copyright 2024 Designed by <a href="index" class="link-warning text-decoration-none">Augmented Intelligence & Cognition Lab.</a></p>
+      </div>      
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+  </html>
